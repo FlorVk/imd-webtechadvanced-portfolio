@@ -1,3 +1,9 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 .grid{
     display:grid;
     gap: 0.5em;
@@ -7,6 +13,7 @@
 .grid div{
     text-align: center;
     padding: 2em;
+    
 }
 
 .future{
@@ -30,7 +37,7 @@
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1200px){
     .grid {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
