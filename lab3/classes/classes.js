@@ -1,3 +1,5 @@
+import Todo from "./todo.js";
+
 export default class App {
     constructor() {
       console.log("🍕");
@@ -10,7 +12,7 @@ export default class App {
   
     setupEventListeners() {
       console.log("👂🏽");
-      document.querySelector("#add-item-text").addEventListener("keyup", this.createItem);
+      document.querySelector("#add-item-text").addEventListener("keyup", this.createItem.bind(this));
       // HINT🤩
       // pressing the enter key in the text field triggers the createItem function
       // addEventListener("keyup", this.createItem.bind(this));
@@ -22,6 +24,10 @@ export default class App {
       if (e.key ==="Enter"){
          console.log("📕"); 
       }
+      this.reset();
+      console.log(this);
+
+
       // HINT🤩
       // this function should create a new todo by using the Todo() class
       // new Todo(text)
