@@ -23,6 +23,7 @@ export default class App {
     createItem(e) {
       if (e.key ==="Enter"){
          console.log("📕"); 
+         let todo = new Todo("this is a demo");
       }
       this.reset();
       console.log(this);
