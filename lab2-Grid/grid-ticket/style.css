@@ -59,3 +59,41 @@ span{
     border: solid 1px black;
 }
 
+@media (min-width: 900px){
+    .grid{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .qr-code{
+        border: solid 1px black;
+        grid-row: 1/4;
+        grid-column: 2/4;
+    }
+
+    .title{
+        background-color: initial;
+        color: black;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .ticket_info{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .css{
+        display: unset;
+        grid-column: 1/span 3;
+        font-weight: normal;
+        text-transform: none;
+    }
+
+    .ticket {
+        grid-column: 3/3;
+    }
+
+    
+
